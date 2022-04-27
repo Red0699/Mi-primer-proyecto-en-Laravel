@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -167,6 +167,9 @@ return [
         /*
          * Package Service Providers...
          */
+        Sdkconsultoria\Core\ServiceProvider::class,
+        Sdkconsultoria\Base\ServiceProvider::class,
+        App\Providers\MenuServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -176,7 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\FortifyServiceProvider::class,
     ],
 
     /*
